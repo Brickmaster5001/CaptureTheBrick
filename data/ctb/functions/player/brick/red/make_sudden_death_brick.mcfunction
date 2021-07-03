@@ -1,0 +1,1 @@
+summon armor_stand ~ ~-1.2 ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:["player.red_brick","player.brick_marker"],DisabledSlots:4128768,ArmorItems:[{},{},{},{id:"minecraft:iron_ingot",Count:1b,tag:{RedBrick:1b,RedSuddenDeathBrick:1b}}],CustomName:'{"text":"Sudden Death Brick","color":"red","bold":true}'}
