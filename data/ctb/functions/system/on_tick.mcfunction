@@ -14,3 +14,7 @@ execute if score lobbyAnimateCount main.global matches 30 run bossbar set minecr
 execute if score lobbyAnimateCount main.global matches 40 run bossbar set minecraft:lobby_display name [{"text":". . Waiting for Game to Start . .","bold":"true","color":"#695B87"}]
 execute if score lobbyAnimateCount main.global matches 50 run bossbar set minecraft:lobby_display name [{"text":". Waiting for Game to Start .","bold":"true","color":"#695B87"}]
 execute if score lobbyAnimateCount main.global matches 60 run scoreboard players set lobbyAnimateCount main.global 0
+
+# provide players with the player.playing tag when they walk under a daylight detector
+execute as @a[tag=!player.in_lobby] at @s if block ~ ~3 ~ daylight_detector if score gameState main.global matches 0 run function ctb:player/join/player
+execute as @a[tag=!player.in_lobby] at @s if block ~ ~3 ~ daylight_detector if score gameState main.global matches 1.. run function ctb:player/join/fail
