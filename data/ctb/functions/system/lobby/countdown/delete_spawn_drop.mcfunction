@@ -1,2 +1,2 @@
 # Clears player drop structure
-fill 20 10 23 50 14 13 air
+fill 214 55 78 244 59 88 air

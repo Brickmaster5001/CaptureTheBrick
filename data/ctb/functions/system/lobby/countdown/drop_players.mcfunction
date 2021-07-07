@@ -1,8 +1,8 @@
 # Break Red Glass
-fill 21 10 22 24 10 14 air destroy
+fill 218 55 79 215 55 87 air destroy
 
 # Break Blue Glass
-fill 46 10 14 49 10 22 air destroy
+fill 243 55 87 240 55 79 air destroy
 
 # Kill dropped dropped items
 kill @e[type=item]
